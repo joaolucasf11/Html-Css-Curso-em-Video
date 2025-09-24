@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando id e classes</title>
+</head>
+<style>
+    body {
+        background-color: #d1ffd5;
+    }
+    h1 {
+        color: rgb(30, 156, 72);
+    }
+    h1:hover {
+        color: rgb(165, 11, 75);
+    }
+    #principal {
+        color: rgb(224, 255, 228);
+        background-color: rgb(0, 97, 21);
+        font-size: 3em;
+        text-align: center;
+    }
+    #principal:hover {
+        color: rgb(219, 219, 219);
+        background-color: rgb(128, 0, 0);
+    }
+    #b {
+        color: rgb(89, 122, 36);
+    }
+    .paragrafo {
+        color: rgb(15, 201, 160);
+        font-size: 1.2em;
+        text-align: justify;
+    }
+    .p1 {
+        background-color: rgb(238, 255, 240);
+    }
+    a {
+        color: rgb(207, 45, 45);
+        text-decoration: none;
+        font-size: 1.5em;
+    }
+    a:visited {
+        color: rgb(167, 25, 0);
+    }
+    a:hover {
+        color: rgb(165, 11, 75);
+        text-decoration: underline;
+    }
+    a::before {
+        content: "➡️";
+        color: rgb(37, 37, 37);
+    }
+    a:active {
+        color: rgb(255, 136, 0);
+    }
+    a::after {
+        content: " (link)";
+        color: rgb(37, 37, 37);
+    }
+</style>
+<body>
+    <h1 id="principal">Isto é um h1</h1>
+    <h1>Isto também é um h1</h1>
+    <h2 id="a">a de amor</h2>
+    <p class="paragrafo p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore maiores quos, eos vel ea repellendus, placeat, sed ab ex fugiat reiciendis voluptate autem voluptatum sint cupiditate in quidem. Totam, deleniti?Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ut inventore autem dolor expedita, officiis sed fugit a labore quasi voluptatem fuga! In amet, vero tempore sapiente provident exercitationem blanditiis.</p>
+    <h2 id="b">b de boneco</h2>
+    <p class="paragrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos tempora soluta incidunt. Iure, voluptate amet exercitationem debitis corrupti suscipit, et autem voluptatum consequatur quae dolorum sed saepe veniam ea nihil. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, ex cumque quo aspernatur libero, sunt quasi id consectetur voluptas quis, esse commodi dicta mollitia facere veritatis dolorum officiis perferendis placeat? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique fugiat fugit adipisci nemo eos minus voluptas ullam quaerat dolorem omnis ad odio, non doloribus earum quia id ea obcaecati praesentium?</p>
+    <ul>
+    <li><a href="https:youtube.com" target="_blank">Site do youtube</a></li>
+    <li><a href="https:github.com" target="_blank">Site do github</a></li>
+    <li><a href="https:instagram.com" target="_blank">Site do instagram</a></li>
+    </ul>
+</body>
+</html>
